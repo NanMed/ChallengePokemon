@@ -3,45 +3,27 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation"
-    app:startDestination="@id/kubrickFragment">
-
-
+    app:startDestination="@id/pokemonesFragment">
     <fragment
-        android:id="@+id/kubrickFragment"
-        android:name="edu.itesm.stanley.KubrickFragment"
-        android:label="KubrickFragment" >
+        android:id="@+id/pokemonesFragment"
+        android:name="edu.itesm.stanley.PokemonesFragment"
+        android:label="fragment_pokemones"
+        tools:layout="@layout/fragment_pokemones" >
         <action
-            android:id="@+id/action_kubrickFragment_to_moviesFragment"
-            app:destination="@id/moviesFragment" />
-        <action
-            android:id="@+id/action_kubrickFragment_to_actorskFragment"
-            app:destination="@id/actorskFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/moviesFragment"
-        android:name="edu.itesm.stanley.MoviesFragment"
-        android:label="fragment_movies"
-        tools:layout="@layout/fragment_movies" >
-        <action
-            android:id="@+id/action_moviesFragment_to_movieFragment"
-            app:destination="@id/movieFragment"
+            android:id="@+id/action_pokemonesFragment_to_pokemonFragment"
+            app:destination="@id/pokemonFragment"
             app:enterAnim="@android:anim/slide_in_left"
             app:exitAnim="@android:anim/slide_out_right"
             app:popEnterAnim="@android:anim/fade_in"
             app:popExitAnim="@android:anim/fade_out" />
     </fragment>
     <fragment
-        android:id="@+id/actorskFragment"
-        android:name="edu.itesm.stanley.ActorskFragment"
-        android:label="fragment_actorsk"
-        tools:layout="@layout/fragment_actorsk" />
-    <fragment
-        android:id="@+id/movieFragment"
-        android:name="edu.itesm.stanley.MovieFragment"
-        android:label="fragment_movie"
-        tools:layout="@layout/fragment_movie" >
+        android:id="@+id/pokemonFragment"
+        android:name="edu.itesm.stanley.PokemonFragment"
+        android:label="fragment_pokemon"
+        tools:layout="@layout/fragment_pokemon" >
         <argument
-            android:name="movie"
-            app:argType="edu.itesm.stanley.Movie" />
+            android:name="pokemon"
+            app:argType="edu.itesm.stanley.Pokemon" />
     </fragment>
 </navigation>

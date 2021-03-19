@@ -4,16 +4,16 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MoviesFragment">
+    tools:context=".PokemonesFragment">
 
     <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/movies_recycler"
+        android:id="@+id/pokemones_recycler"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        tools:listitem="@layout/movies_renglon" />
+        tools:listitem="@layout/pokemones_renglon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

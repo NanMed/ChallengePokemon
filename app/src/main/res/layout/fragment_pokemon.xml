@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MovieFragment">
+    tools:context=".PokemonFragment">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -20,7 +20,7 @@
             android:id="@+id/foto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            tools:srcCompat="@mipmap/movies_round" />
+            tools:srcCompat="@mipmap/pokemones_round" />
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -29,26 +29,26 @@
             android:paddingLeft="10dp">
 
             <TextView
-                android:id="@+id/titulo"
+                android:id="@+id/nombre"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="titulo"
+                android:text="nombre"
                 android:textColor="@color/purple_500"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/anio"
+                android:id="@+id/tipo"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="anio"
+                android:text="tipo"
                 android:textColor="@color/black"
                 android:textStyle="italic" />
 
             <TextView
-                android:id="@+id/plot"
+                android:id="@+id/descripcion"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="plot" />
+                android:text="descripcion" />
 
         </LinearLayout>
     </LinearLayout>
