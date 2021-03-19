@@ -36,13 +36,7 @@ class PokemonesAdapter(private val movies : List<Pokemon>)
         holder.itemView.setOnClickListener {
             val action = PokemonesFragmentDirections.actionPokemonesFragmentToPokemonFragment(pokemon)
             holder.itemView.findNavController().navigate(action)
-            if (pokemon.tipo == "Agua"){
-                Toast.makeText(holder.itemView.context,"${pokemon.nombre}, debilidad: planta y eléctricos",Toast.LENGTH_SHORT).show();
-            } else if(pokemon.tipo == "Fuego"){
-                Toast.makeText(holder.itemView.context,"${pokemon.nombre}, debilidad: agua, tierra y roca",Toast.LENGTH_SHORT).show();
-            } else{
-                Toast.makeText(holder.itemView.context,"Yo te elijo ${pokemon.nombre}",Toast.LENGTH_SHORT).show();
-            }
+            Toast.makeText(holder.itemView.context,"${pokemon.secreto}",Toast.LENGTH_SHORT).show();
         }
     }
 
